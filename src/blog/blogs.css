@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  z-index: 3;
+}
+header nav .maindiv {
+  width: 100%;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 10px 0;
+}
+header nav .maindiv h1 {
+  display: inline-block;
+  margin: 0 100px;
+}
+header nav .maindiv ul {
+  display: inline-block;
+}
+header nav .maindiv ul li {
+  margin: 0 10px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+header nav .maindiv ul .aboutmain {
+  position: relative;
+}
+header nav .maindiv ul .aboutmain .aboutul {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+  background-color: rgb(206, 206, 218);
+}
+header nav .maindiv ul .aboutmain .aboutul li {
+  display: block;
+  text-transform: none;
+  font-size: 15px;
+}
+header nav .maindiv ul .aboutmain:hover ul {
+  display: block;
+}
+header nav .maindiv ul .mainlevel {
+  position: relative;
+}
+header nav .maindiv ul .mainlevel .levelul {
+  display: none;
+  position: absolute;
+  min-width: 80px;
+  background-color: rgb(206, 206, 218);
+}
+header nav .maindiv ul .mainlevel .levelul li {
+  display: block;
+  text-transform: none;
+  font-size: 15px;
+}
+header nav .maindiv ul .mainlevel:hover .levelul {
+  display: block;
+}
+header nav .maindiv a {
+  text-decoration: none;
+  color: rgb(25, 8, 8);
+}
+header nav .maindiv img {
+  width: 20px;
+  height: 20px;
+}/*# sourceMappingURL=blogs.css.map */

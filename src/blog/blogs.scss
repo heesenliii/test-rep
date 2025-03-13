@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+//Nav
+
+header{
+    nav {
+        z-index: 3;
+        .maindiv{
+            width: 100%;
+            position: fixed;
+            background-color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 10px 0;
+
+            h1{
+                display: inline-block;
+                margin: 0 100px;
+            }
+            ul{
+                display: inline-block;
+                li{
+                    margin: 0 10px;
+                    display: inline-block;
+                    text-transform: uppercase;
+                }
+
+                .aboutmain{
+                    position: relative;
+                    .aboutul{
+                        display: none;
+                        position: absolute;
+                        min-width: 150px;
+                        background-color:rgb(206, 206, 218);
+                        li{
+                            display: block;
+                            text-transform: none;
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                .aboutmain:hover ul{
+                    display: block;
+                }
+                .mainlevel{
+                    position: relative;
+                    .levelul{
+                        display: none;
+                        position: absolute;
+                        min-width: 80px;
+                        background-color:rgb(206, 206, 218);
+                        li{
+                            display: block;
+                            text-transform: none;
+                            font-size: 15px;
+                        }
+                        
+
+
+                    }
+                }
+                .mainlevel:hover .levelul{
+                    display: block;
+                }
+            }
+            a{
+                text-decoration: none;
+                color:rgb(25, 8, 8);
+            }
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

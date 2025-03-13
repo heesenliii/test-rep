@@ -1,0 +1,351 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  z-index: 3;
+}
+header nav .maindiv {
+  width: 100%;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 10px 0;
+}
+header nav .maindiv h1 {
+  display: inline-block;
+  margin: 0 100px;
+}
+header nav .maindiv ul {
+  display: inline-block;
+}
+header nav .maindiv ul li {
+  margin: 0 10px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+header nav .maindiv ul .aboutmain {
+  position: relative;
+}
+header nav .maindiv ul .aboutmain .aboutul {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+  background-color: rgb(206, 206, 218);
+}
+header nav .maindiv ul .aboutmain .aboutul li {
+  display: block;
+  text-transform: none;
+  font-size: 15px;
+}
+header nav .maindiv ul .aboutmain:hover ul {
+  display: block;
+}
+header nav .maindiv ul .mainlevel {
+  position: relative;
+}
+header nav .maindiv ul .mainlevel .levelul {
+  display: none;
+  position: absolute;
+  min-width: 80px;
+  background-color: rgb(206, 206, 218);
+}
+header nav .maindiv ul .mainlevel .levelul li {
+  display: block;
+  text-transform: none;
+  font-size: 15px;
+}
+header nav .maindiv ul .mainlevel:hover .levelul {
+  display: block;
+}
+header nav .maindiv a {
+  text-decoration: none;
+  color: rgb(25, 8, 8);
+}
+header nav .maindiv img {
+  width: 20px;
+  height: 20px;
+}
+header .headermain .headerimg {
+  height: 500px;
+  width: 100%;
+  background-image: url(https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/03/photo-1443527216320-7e744084f5a7-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .headermain .headerimg .contentviu h1 {
+  text-align: center;
+  color: white;
+  font-size: 45px;
+}
+header .headermain .headerimg .contentviu p {
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+header .headermain .headerimg .contentviu div {
+  display: flex;
+  justify-content: center;
+}
+header .headermain .headerimg .contentviu div .contentaone {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  background-color: #745cf9;
+  padding: 12px 45px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+header .headermain .headerimg .contentviu div .contentaone:hover {
+  background-color: #5241b2;
+}
+header .headermain .headerimg .contentviu div .contentatwo {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  background-color: none;
+  padding: 10px 25px;
+  font-size: 12px;
+  border: 3px solid rgb(255, 255, 255);
+}
+header .headermain .headerimg .contentviu div .contentatwo:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+main .divmain {
+  display: flex;
+  justify-content: space-around;
+  margin: 90px 40px;
+}
+main .divmain img {
+  width: 50%;
+}
+main .divmain .mainright {
+  width: 30%;
+  text-align: left;
+  margin: auto 0;
+}
+main .divmain p {
+  z-index: 1;
+  opacity: 0.5;
+}
+main .divmain a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  background-color: #745cf9;
+  padding: 10px 25px;
+  font-size: 12px;
+}
+main .divsecond {
+  display: flex;
+  justify-content: space-around;
+  margin: 90px 40px;
+}
+main .divsecond .secondleft {
+  width: 30%;
+  text-align: left;
+  margin: auto 0;
+}
+main .divsecond img {
+  width: 50%;
+}
+main .divsecond p {
+  z-index: 1;
+  opacity: 0.5;
+}
+main .divsecond a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  background-color: #745cf9;
+  padding: 10px 25px;
+  font-size: 12px;
+}
+main .smallcontainer a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  background-color: #745cf9;
+  padding: 10px 25px;
+  font-size: 12px;
+}
+main .smallcontainer .smallimg {
+  width: 100%;
+  height: 300px;
+  background-image: url(https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/12/photo-1452723312111-3a7d0db0e024.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .smallcontainer .smallimg .smallvie {
+  color: white;
+  text-align: center;
+  margin: 10px 60px;
+}
+main .smallcontainer .smallimg .smallvie h1 {
+  font-size: 45px;
+}
+main .smallcontainer .smallimg .smallvie p {
+  font-size: 12px;
+}
+main .mainlimit {
+  margin: 0 100px;
+}
+main .mainlimit a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  background-color: #745cf9;
+  padding: 10px 25px;
+  font-size: 12px;
+}
+main .mainlimit .containerlimit {
+  text-align: center;
+  margin-top: 50px;
+}
+main .mainlimit .containerlimit h1 {
+  font-size: 25px;
+}
+main .mainlimit .containerlimit p {
+  font-size: 12px;
+}
+main .mainlimit img {
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
+}
+main .mainfour {
+  background-color: #0e1015;
+}
+main .mainfour .containerfour {
+  color: white;
+  text-align: center;
+}
+main .mainfour .containerfour h1 {
+  padding-top: 30px;
+}
+main .mainfour .containerimage {
+  display: flex;
+  justify-content: space-between;
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+}
+main .mainfour .containerimage a {
+  text-decoration: none;
+}
+main .mainfour .containerimage .row { /* IE10 */
+  display: flex; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+main .mainfour .containerimage .column { /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0;
+}
+main .mainfour .containerimage .column img {
+  margin-top: 0px;
+  vertical-align: middle;
+  width: 100%;
+}
+main .mainfour .containerimage .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.2s ease;
+}
+main .mainfour .containerimage .column img:hover .overlay {
+  height: 100%;
+}
+main .mainfour .containerimage .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  main .mainfour .containerimage .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .mainfour .containerimage .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+main .fiveimage {
+  padding-top: 80px;
+  height: 400px;
+  width: 100%;
+  background-image: url(https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/12/photo-1451417379553-15d8e8f49cde.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main .fiveimage h2 {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+main .fiveimage .w3-display-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+main .fiveimage .w3-display-container .mySlides {
+  display: none;
+  width: 100%;
+}
+main .fiveimage .w3-display-container .mySlides p {
+  text-align: center;
+  color: white;
+  font-size: 10px;
+  margin: 20px 200px;
+}
+main .fiveimage .w3-display-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 20px calc(50% - 50px);
+}
+main .fiveimage .w3-display-container .w3-display-left {
+  background-color: red;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 50%;
+  margin-left: 10%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+}
+main .fiveimage .w3-display-container .w3-display-right {
+  background-color: red;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 50%;
+  margin-left: 90%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+}/*# sourceMappingURL=main.css.map */

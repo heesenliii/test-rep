@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+//Nav
+
+header{
+    nav {
+        z-index: 3;
+        .maindiv{
+            width: 100%;
+            position: fixed;
+            background-color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 10px 0;
+
+            h1{
+                display: inline-block;
+                margin: 0 100px;
+            }
+            ul{
+                display: inline-block;
+                li{
+                    margin: 0 10px;
+                    display: inline-block;
+                    text-transform: uppercase;
+                }
+
+                .aboutmain{
+                    position: relative;
+                    .aboutul{
+                        display: none;
+                        position: absolute;
+                        min-width: 150px;
+                        background-color:rgb(206, 206, 218);
+                        li{
+                            display: block;
+                            text-transform: none;
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                .aboutmain:hover ul{
+                    display: block;
+                }
+                .mainlevel{
+                    position: relative;
+                    .levelul{
+                        display: none;
+                        position: absolute;
+                        min-width: 80px;
+                        background-color:rgb(206, 206, 218);
+                        li{
+                            display: block;
+                            text-transform: none;
+                            font-size: 15px;
+                        }
+                        
+
+
+                    }
+                }
+                .mainlevel:hover .levelul{
+                    display: block;
+                }
+            }
+            a{
+                text-decoration: none;
+                color:rgb(25, 8, 8);
+            }
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+
+//Four
+
+.mainfour{
+    background-color:#ffffff;
+    margin: 0 80px;
+    .containerfour{
+        h1{
+            padding-top: 30px;
+        }
+    }
+    .containerimage{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        a{
+            text-decoration: none;
+        }
+        .row{
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        .column {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0;
+        }
+        
+        .column img {
+            margin-top: 0px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        //hover hissesi
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #008CBA;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: .2s ease;
+        }
+        
+        // .column img:hover .overlay {
+        //     height: 100%;
+        // }
+        
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        
+          /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+            }
+        }
+        
+          /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+            }
+        }
+    }
+}
